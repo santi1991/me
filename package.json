@@ -1,8 +1,8 @@
 {
-  "name": "iamsantiago",
+  "name": "me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://santi1991.github.io/iamsantiago",
+  "homepage": "https://santi1991.github.io/me/",
   "dependencies": {
     "@fontsource/roboto": "^4.4.2",
     "@material-ui/core": "^4.11.4",
