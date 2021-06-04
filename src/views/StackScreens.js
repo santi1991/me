@@ -1,9 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from '../main/Home';
-import About from '../main/About';
-import Skills from '../main/Skills';
+import Home from './main/Home';
+import About from './main/About';
+import Skills from './main/Skills';
+import Settings from './main/Settings'
 
 const StackScreens = () => {
     return (
@@ -24,6 +25,9 @@ const StackScreens = () => {
                 </Route>
                 <Route exact path='/skills'>
                     <Skills />
+                </Route>
+                <Route exact path='/settings'>
+                    <Settings />
                 </Route>
             </Switch>
         </>

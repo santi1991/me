@@ -1,16 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { useStyles } from '../../utilities/commons/Styles';
-
+// import { useStyles } from '../../utilities/commons/Styles';
 import { ListItem, ListItemIcon, ListItemText, Divider, List, Avatar } from '@material-ui/core';
 import { itemsList } from '../../utilities/screens/ScreenItems';
-
-// import { avatarImg } from '../../resources/img/Images';
-import img from '../../resources/img/avatar.jpg';
+import SettleTheme from '../../utilities/components/SettleTheme';
+import Portrait from '../../utilities/components/Portrait';
 
 
 const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
-    const classes = useStyles();
     const history = useHistory();
     const handleOnClick = (route) => {
         history.push(route);
@@ -19,10 +16,9 @@ const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
         }
     };
     return (
-        <>
-            <div className={classes.toolbar} />
+        <>                         
+            <Portrait />
             <Divider />
-            <Avatar alt='Santiago' src={img} style={{height: 170, width: 170}} />
             <List>
                 {
                     itemsList.map((item, index) => (
@@ -34,6 +30,7 @@ const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
                 }
             </List>
             <Divider />
+            <SettleTheme/>
         </>
     );
 };

@@ -1,31 +1,8 @@
-import { makeStyles, createMuiTheme, useTheme } from '@material-ui/core/styles';
-import { orange, green } from '@material-ui/core/colors';
-
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: orange[400],
-        },
-        secondary: {
-            main: green[400],
-        }
-    }
-});
+import { makeStyles, createMuiTheme, useTheme, ThemeProvider } from '@material-ui/core/styles';
+// import { orange, green } from '@material-ui/core/colors';
 
 const drawerWidth = 240;
 
-// export const useStyles = makeStyles((theme) => ({
-//     root: {
-//         display: 'flex',
-//     },    
-//     drawer: {
-//         width: drawerWidth,
-//         flexShrink: 0,
-//     },
-//     drawerPaper: {
-//         width: drawerWidth,
-//     },
-// }));
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -51,8 +28,8 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
-        width: drawerWidth,
-    },
+        width: drawerWidth, 
+    }, 
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
@@ -64,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export { useStyles, theme, useTheme };
+export { useStyles, useTheme, ThemeProvider, createMuiTheme };
 
 /*
 specialButton: {
@@ -76,3 +53,27 @@ specialButton: {
         padding: '5px 30px'
     },
 */
+
+// export const useStyles = makeStyles((theme) => ({
+//     root: {
+//         display: 'flex',
+//     },    
+//     drawer: {
+//         width: drawerWidth,
+//         flexShrink: 0,
+//     },
+//     drawerPaper: {
+//         width: drawerWidth,
+//     },
+// }));
+
+// const theme = createMuiTheme({
+//     palette: {
+//         primary: {
+//             main: orange[400],
+//         },
+//         secondary: {
+//             main: green[400],
+//         }
+//     }
+// });

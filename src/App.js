@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
-
-import { theme } from './utilities/commons/Styles';
-
-import { ThemeProvider } from '@material-ui/core/styles';
 import AppContainer from './views/AppContainer';
-
+import { ContextProvider } from './utilities/context/ContextProvider';
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ContextProvider>
       <AppContainer />
-    </ThemeProvider>
+    </ContextProvider>
   );
 }
 
