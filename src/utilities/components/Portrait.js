@@ -16,7 +16,10 @@ const useStyles = makeStyles(() => ({
         fontSize:14
     },
     avatar: {
-        height: 160, width: 160, marginTop: 20, marginBottom: 15
+        height: 160, 
+        width: 160, 
+        marginTop: 20, 
+        marginBottom: 15,        
     }
 }));
 

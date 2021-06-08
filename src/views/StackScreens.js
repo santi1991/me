@@ -5,6 +5,8 @@ import Home from './main/Home';
 import About from './main/About';
 import Skills from './main/Skills';
 import Settings from './main/Settings'
+import Projects from './main/Projects'
+
 
 const StackScreens = () => {
     return (
@@ -28,6 +30,9 @@ const StackScreens = () => {
                 </Route>
                 <Route exact path='/settings'>
                     <Settings />
+                </Route>
+                <Route exact path='/projects'>
+                    <Projects />
                 </Route>
             </Switch>
         </>

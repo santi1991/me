@@ -1,7 +1,7 @@
 import { makeStyles, createMuiTheme, useTheme, ThemeProvider } from '@material-ui/core/styles';
 // import { orange, green } from '@material-ui/core/colors';
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
-        },
+                     
+        },               
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -32,12 +33,25 @@ const useStyles = makeStyles((theme) => ({
     }, 
     content: {
         flexGrow: 1,
-        padding: theme.spacing(3),
+        padding: theme.spacing(0.1),
     },
     //avatar    
     large: {
         width: 170,
         height: 170,
+    },
+    //-------
+    //----about--------------
+    screenContainer: {
+        marginTop: 50,
+        marginLeft: 15,
+        marginRight:15,
+        flexGrow: 1,        
+    },
+    paper: {
+        //padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
     },
 }));
 

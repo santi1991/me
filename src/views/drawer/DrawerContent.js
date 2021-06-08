@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 // import { useStyles } from '../../utilities/commons/Styles';
-import { ListItem, ListItemIcon, ListItemText, Divider, List, Avatar } from '@material-ui/core';
+import { ListItem, ListItemIcon, ListItemText, Divider, List } from '@material-ui/core';
 import { itemsList } from '../../utilities/screens/ScreenItems';
 import SettleTheme from '../../utilities/components/SettleTheme';
 import Portrait from '../../utilities/components/Portrait';

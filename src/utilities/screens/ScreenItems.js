@@ -1,6 +1,7 @@
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
 
 export const itemsList = [
     {
@@ -11,7 +12,7 @@ export const itemsList = [
     },
     {
         id: 1,
-        screen: 'About',
+        screen: 'About Me',
         icon: <InfoIcon />,
         route: '/about'
     },
@@ -20,5 +21,12 @@ export const itemsList = [
         screen: 'Skills',
         icon: <MenuBookIcon />,
         route: '/skills'
+    },
+    {
+        id: 3,
+        screen: 'Projects',
+        icon: <LocalMallIcon />,
+        route: '/projects'
     }
 ];
+

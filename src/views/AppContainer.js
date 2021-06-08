@@ -23,7 +23,7 @@ const AppContainer = () => {
                     <CssBaseline />
                     <DrawerNavigator />
                     <main className={classes.content}>
-                        <div className={classes.toolbar} />
+                        
                         <StackScreens />
                     </main>
                 </div>
