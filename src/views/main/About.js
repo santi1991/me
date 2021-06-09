@@ -5,8 +5,10 @@ import MediaCard from '../../utilities/components/MediaCard';
 
 import logoUtp from '../../resources/img/logoUTP.jpg';
 import logoCalasanz from '../../resources/img/logoCalasanz.jpg';
-import logoColombo from '../../resources/img/logoColombo.jpg';
-import logoHKUST from '../../resources/img/logoHKUST.jpg';
+import logoGit from '../../resources/img/logoGit.jpg';
+import logoReact from '../../resources/img/logoReact.jpg';
+import logoEnglish from '../../resources/img/logoEnglish.jpg';
+import logoTIC from '../../resources/img/logoTIC.jpg';
 
 const About = () => {
     const classes = useStyles();
@@ -24,7 +26,10 @@ const About = () => {
                             Soy un ingeniero mecánico amante de la naturaleza, inspirado cada día por la exploración espacial, y apasionado por las nuevas tecnologías!...
                         </Typography>
                         <Typography variant="body1" color="textSecondary" component="p" style={{ fontStyle: 'italic' }}>
-                            Me gusta construir aplicaciones mobiles, ser creativo y simple en el proceso de creación!.
+                            {'...'}
+                        </Typography>
+                        <Typography variant="body1" color="textSecondary" component="p" style={{ fontStyle: 'italic' }}>
+                            En mi camino como programador, me gusta construir aplicaciones mobiles, ser creativo y simple durante el proceso de creación!.
                         </Typography>
                     </Paper>
                 </Grid>
@@ -47,23 +52,35 @@ const About = () => {
 
                 <Grid item xs={6} sm={3}>
                     <MediaCard
-                        image={logoColombo}
-                        title='Centro Colombo Americano'
-                        description='Academic knowledge in english level B2'
+                        image={logoEnglish}
+                        title='Academic Knowledge in English level B2'
+                        description='Centro Colombo Americano'
+                        contentHeight={110}
                     />
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <MediaCard
-                        image={logoHKUST}
-                        title='Hong Kong University of Science and Technology'
-                        description='Full-Stack Web Development with React'
+                        image={logoReact}
+                        title='Full-Stack Web Development with React'
+                        description='Hong Kong University of Science and Technology'
+                        contentHeight={110}
                     />
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                    <MediaCard
+                        image={logoGit}
+                        title='Curso Profesional de Git y Github'
+                        description='Platzi'
+                        contentHeight={110}
+                    />
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                    <MediaCard
+                        image={logoTIC}
+                        title='Programación y Desarrollo de Aplicaciones'
+                        description='Misión TIC 2022 y Universidad de Antioquia'
+                        contentHeight={110}
+                    />
                 </Grid>
             </Grid>
         </div>

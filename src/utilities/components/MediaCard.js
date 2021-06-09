@@ -18,18 +18,21 @@ const useStyles = makeStyles({
     },
 });
 
-const MediaCard = ({ image, title = '', subtitle = '', description = '' }) => {
+const MediaCard = ({ image, title, subtitle = '', description, contentHeight = 80 }) => {
     const classes = useStyles();
 
     return (
         <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
+                    alt='img'
+                    component="img"
+                    height="140"
                     className={classes.media}
                     image={image}
                     title="Contemplative Reptile"
                 />
-                <CardContent>
+                <CardContent style={{height: contentHeight}}>
                     <Typography  variant="subtitle2" component="h2" align='center'>
                         {title}
                     </Typography>
@@ -37,7 +40,7 @@ const MediaCard = ({ image, title = '', subtitle = '', description = '' }) => {
                         {subtitle}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Título: {description}
+                        {description}
                     </Typography>
                 </CardContent>
             </CardActionArea>            
