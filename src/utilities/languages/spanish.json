@@ -1,0 +1,27 @@
+{
+    "translation": {
+        "Hello World": "Hola Mundo",
+        "Hello": "Hola",
+        "I am": "Yo soy",
+        "About Me": "Sobre Mi",
+        "I like to be": "Me gusta ser",
+        "Creative": "Creativo",
+        "Projects": "Proyectos",
+        "I usually learn": "Usualmente aprendo",
+        "New things": "Cosas nuevas",
+        "Skills": "Habilidades",
+        "Home": "Inicio",
+        "Description": "Soy un ingeniero mecánico amante de la naturaleza, inspirado cada día por la exploración espacial, y apasionado por las nuevas tecnologías",
+        "Profile": "En mi camino como desarrollador, me gusta construir aplicaciones móviles, ser creativo y sencillo durante el proceso de creación",
+        "High School Degree": "Bachiller Académico",
+        "Mechanical Engineer": "Ingeniero Mecánico",
+        "English Degree": "Conocimiento académico en Inglés - Nivel B2",
+        "Full Stack Degree": "Desarrollo Web Full-Stack con React",
+        "Git Degree": "Curso Profesional de Git y Github",
+        "TIC Degree": "Programación y Desarrollo de Aplicaciones",
+        "Core": "Base",
+        "Database": "Base de Datos",
+        "Server": "Servidor",
+        "Tools": "Utilidades"
+    }
+}

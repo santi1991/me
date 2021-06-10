@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react'; 
-
+import { useTranslation } from 'react-i18next';
 
 const AppContext = createContext();
 
@@ -8,25 +8,29 @@ const AppContext = createContext();
 
 const ContextProvider = (props) => {
 
+	const { i18n } = useTranslation();
+
 	const reducer = (state, action) => {
 		const type = action.type;
-		const updateStateField = (field) => {
+		const changeTheme = (field) => {
+			return { ...state, [field]: action.payload };
+		};
+		const changeLanguage = (field) => {
+			i18n.changeLanguage(action.payload)
 			return { ...state, [field]: action.payload };
 		};
 		switch (type) {
 			case 'themeMode':
-				return updateStateField(type);
-			case 'b':
-				return updateStateField(type);
-			case 'c':
-				return updateStateField(type);
+				return changeTheme(type);
+			case 'language':
+				return changeLanguage(type);			
 			default:
 				return state;
 		}
 	};
 	const initialState = {
 		themeMode: 'light',
-		appContextData2: {},
+		language: 'es',
 		appContextData3: {}
 	};
 	const [appState, setAppState] = useReducer(reducer, initialState);

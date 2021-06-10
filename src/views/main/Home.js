@@ -1,6 +1,6 @@
 import React from "react";
 //import { makeStyles } from '@material-ui/core/styles';
-import MeImg from '../../resources/img/me.jpg';
+import MeImg from '../../resources/img/me.png';
 
 import HomeCarousel from '../../utilities/components/HomeCarousel';
 

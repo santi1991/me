@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 //import { useStyles } from '../../utilities/commons/Styles';
 import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,7 +8,7 @@ import { Button, Typography } from '@material-ui/core';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
-import SchoolIcon from '@material-ui/icons/School';
+import SchoolIcon from '@material-ui/icons/School'; 
 
 const useStyles = makeStyles({
     title: {
@@ -32,6 +33,7 @@ const useStyles = makeStyles({
 const HomeCarousel = () => {
     const history = useHistory();
     const classes = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div >
@@ -53,10 +55,10 @@ const HomeCarousel = () => {
             >
                 <div key="slide1" style={{ padding: 1, height: 160 }}>
                     <Typography variant='h4' className={classes.title}>
-                        Hola !
+                        {t('Hello')}!
                     </Typography>
                     <Typography variant='h4' className={classes.subTitle}>
-                        Soy Santiago...
+                        {t('I am')} Santiago...
                     </Typography>
                     
                     <Button 
@@ -67,15 +69,15 @@ const HomeCarousel = () => {
                         style={{marginRight:200, marginTop:10}}
                         size="small"
                     >
-                        SOBRE MI
+                        {t('About Me')}
                     </Button>
                 </div>
                 <div key="slide2" style={{ padding: 1, height: 160  }}>
                     <Typography variant='h5' className={classes.title}>
-                        Me gusta ser
+                        {t('I like to be')}
                     </Typography>
                     <Typography variant='h4' className={classes.subTitle}>
-                        CREATIVO !!
+                        {t('Creative').toUpperCase()} !!
                     </Typography>
                     
                     <Button 
@@ -86,15 +88,15 @@ const HomeCarousel = () => {
                         style={{marginRight:200, marginTop:10}}
                         size="small"
                     >
-                        PROYECTOS
+                        {t('Projects').toUpperCase()}
                     </Button>
                 </div>
                 <div key="slide3" style={{ padding: 1, height: 160  }}>
                     <Typography variant='h5' className={classes.title}>
-                        Usualmente aprendo cosas
+                        {t('I usually learn')}
                     </Typography>
                     <Typography variant='h4' className={classes.subTitle}>
-                        NUEVAS !!
+                        {t('New things').toUpperCase()} !!
                     </Typography>
                     
                     <Button 
@@ -105,7 +107,7 @@ const HomeCarousel = () => {
                         style={{marginRight:200, marginTop:10}}
                         size="small"
                     >
-                        HABILIDADES
+                        {t('Skills').toUpperCase()}
                     </Button>
                 </div>
 
@@ -115,31 +117,3 @@ const HomeCarousel = () => {
     );
 };
 export default HomeCarousel;
-
-/*
-<h1>Hola!</h1>
-                    <h2>Soy Santiago</h2>
-<div>
-                    <img alt='1' src={MeImg} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img alt='2' src={MeImg} />
-                    <p className="legend">Legend 2</p>
-                </div>
-
-                 const carouselItems = [
-        {
-            title: 'Hola!',
-            subTitle: 'Soy Santiago...',
-            buttonIcon: <SystemUpdateAltIcon/>,
-            buttonLabel: 'Ver CV'
-        },
-        {
-            title: 'Me gusta ser',
-            subTitle: 'CREATIVO !!',
-            buttonIcon: <EmojiObjectsIcon/>,
-            buttonLabel: 'Ver CV'
-        }
-    ]
-*/

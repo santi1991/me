@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, Grid, Typography } from '@material-ui/core';
-import img from '../../resources/img/avatar.jpg';
+import img from '../../resources/img/avatar.png';
 import '@fontsource/roboto';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
     },
     subTitle: {
         textAlign:'center',
-        fontStyle:'italic',
+        fontStyle:'italic', 
         fontSize:14
     },
     avatar: {

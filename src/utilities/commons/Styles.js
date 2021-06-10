@@ -43,16 +43,31 @@ const useStyles = makeStyles((theme) => ({
     //-------
     //----about--------------
     screenContainer: {
-        marginTop: 50,
+        marginTop: 55,
         marginLeft: 15,
         marginRight:15,
         flexGrow: 1,        
     },
     paper: {
-        //padding: theme.spacing(2),
+        padding: theme.spacing(1),
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+    paperSkills: {
+        flexDirection:'row',
+        padding: theme.spacing(1),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    },
+    //------skills------------
+    skillTitle: {
+        marginTop:40, 
+        marginRight:5, 
+        marginLeft:5,
+        width:70,
+        fontWeight:'bold',
+        letterSpacing:1
+    }
 }));
 
 export { useStyles, useTheme, ThemeProvider, createMuiTheme };
