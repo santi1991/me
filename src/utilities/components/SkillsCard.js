@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     },
 });
 
-const SkillsCard = ({ image, title, fontSize = 12, popUpTitle }) => {
+const SkillsCard = ({ key, image, title, fontSize = 12, popUpTitle = '' }) => {
     const classes = useStyles();
 
     return (
@@ -37,7 +37,7 @@ const SkillsCard = ({ image, title, fontSize = 12, popUpTitle }) => {
                         height={number}
                         className={classes.media}
                         image={image}
-                        title={popUpTitle ? popUpTitle : title}
+                        title={popUpTitle !== '' ? popUpTitle : title}
                     />                               
                 </CardActionArea>            
             </Card>

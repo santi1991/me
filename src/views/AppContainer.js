@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import StackScreens from './StackScreens';
-import DrawerNavigator from './drawer/DrawerNavigator';
+import NavigationContainer from './NavigationContainer';
 import { useStyles, ThemeProvider, createMuiTheme } from '../utilities/commons/Styles';
 import { AppContext } from '../utilities/context/ContextProvider';
 
@@ -21,9 +21,8 @@ const AppContainer = () => {
             <Router>
                 <div className={classes.root}>
                     <CssBaseline />
-                    <DrawerNavigator />
-                    <main className={classes.content}>
-                        
+                    <NavigationContainer />
+                    <main className={classes.content}>                        
                         <StackScreens />
                     </main>
                 </div>
@@ -33,20 +32,3 @@ const AppContainer = () => {
 }
 
 export default AppContainer;
-
-/*
- <StackScreens />
-<ul>
-    <li>
-        <Link to="/">Home</Link>
-    </li>
-    <li>
-        <Link to="/about">About</Link>
-    </li>
-    <li>
-        <Link to="/skills">Skills</Link>
-    </li>
-</ul>
-
-<hr />
-*/

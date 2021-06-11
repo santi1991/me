@@ -1,14 +1,11 @@
 import React, { useContext } from "react";
 import Switch from '@material-ui/core/Switch';
 import { AppContext } from '../context/ContextProvider';
-
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
-
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 

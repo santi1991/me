@@ -34,14 +34,8 @@ const useStyles = makeStyles((theme) => ({
     content: {
         flexGrow: 1,
         padding: theme.spacing(0.1),
-    },
-    //avatar    
-    large: {
-        width: 170,
-        height: 170,
-    },
-    //-------
-    //----about--------------
+    },    
+    //------  about   --------------
     screenContainer: {
         marginTop: 55,
         marginLeft: 15,
@@ -59,18 +53,55 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
-    //------skills------------
+    //------  skills  ------------
     skillTitle: {
-        marginTop:40, 
+        marginTop:42, 
         marginRight:5, 
         marginLeft:5,
         width:70,
         fontWeight:'bold',
-        letterSpacing:1
-    }
+        letterSpacing:1,        
+    },    
 }));
 
-export { useStyles, useTheme, ThemeProvider, createMuiTheme };
+const styles = {
+    // ----- Avatar Portrait --------
+    avatarContainer: {
+        height: 150, 
+        width: 150, 
+        marginTop: 10, 
+        marginBottom: 10,        
+    },
+    avatarTitle: {
+        textAlign:'center',
+        fontWeight:'bold',
+    },
+    avatarSubtitle: {
+        textAlign:'center',
+        fontStyle:'italic', 
+        fontSize:14,
+        marginBottom: 15
+    },
+    // ------ SLIDES Carousel -------------------
+    slideTitle: {
+        textAlign:'left',
+        fontWeight:'bold',
+        color: 'black',
+        letterSpacing: 1,
+        fontSize:30
+        
+    },
+    slideSubtitle: {
+        textAlign:'left',
+        fontWeight:'bold',
+        color: 'black',
+        letterSpacing: 1,
+        //fontStyle:'italic',
+        fontSize:45,
+    },
+};
+
+export { useStyles, useTheme, ThemeProvider, createMuiTheme, styles };
 
 /*
 specialButton: {

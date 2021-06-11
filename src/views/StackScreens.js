@@ -1,14 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { screensList } from "../utilities/commons/ScreensList";
 
-import Home from './main/Home';
-import About from './main/About';
-import Skills from './main/Skills';
-import Settings from './main/Settings'
-import Projects from './main/Projects'
-
-
-const StackScreens = () => {
+const StackScreens = () => { 
     return (
         <>
             {/*
@@ -19,21 +13,13 @@ const StackScreens = () => {
                 of them to render at a time
             */}
             <Switch>
-                <Route exact path='/me'>
-                    <Home />
-                </Route>
-                <Route exact path='/about'>
-                    <About />
-                </Route>
-                <Route exact path='/skills'>
-                    <Skills />
-                </Route>
-                <Route exact path='/settings'>
-                    <Settings />
-                </Route>
-                <Route exact path='/projects'>
-                    <Projects />
-                </Route>
+                {
+                    screensList.map((item) => (
+                        <Route exact path={item.path} key={item.id}>
+                            {item.component}
+                        </Route>
+                    ))
+                }                
             </Switch>
         </>
     )

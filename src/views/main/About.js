@@ -2,14 +2,9 @@ import React from "react";
 import { useStyles } from '../../utilities/commons/Styles';
 import { useTranslation } from 'react-i18next';
 import { Paper, Grid, Typography } from '@material-ui/core';
-import EducationCard from '../../utilities/components/EducationCard';
+import EducationCard from '../../utilities/components/EducationCard'; 
+import { imgUtp, imgCalasanz, imgGit, imgReact, imgEnglish, imgTIC } from '../../resources/img/Images'
 
-import logoUtp from '../../resources/img/logoUTP.png';
-import logoCalasanz from '../../resources/img/logoCalasanz.png';
-import logoGit from '../../resources/img/logoGit.png';
-import logoReact from '../../resources/img/logoReact.png';
-import logoEnglish from '../../resources/img/logoEnglish.png';
-import logoTIC from '../../resources/img/logoTIC.png';
 
 const About = () => {
     const { t } = useTranslation();
@@ -38,7 +33,7 @@ const About = () => {
 
                 <Grid item xs={12} sm={3}>
                     <EducationCard
-                        image={logoCalasanz}
+                        image={imgCalasanz}
                         title={t('High School Degree')}
                         description='Colegio Calasanz Pereira'
                     />
@@ -46,7 +41,7 @@ const About = () => {
 
                 <Grid item xs={12} sm={3}>
                     <EducationCard
-                        image={logoUtp}
+                        image={imgUtp}
                         title={t('Mechanical Engineer')}
                         description='Universidad Tecnológica de Pereira'
                     />
@@ -54,7 +49,7 @@ const About = () => {
 
                 <Grid item xs={6} sm={3}>
                     <EducationCard
-                        image={logoEnglish}
+                        image={imgEnglish}
                         title={t('English Degree')}
                         description='Centro Colombo Americano'
                         contentHeight={110}
@@ -62,7 +57,7 @@ const About = () => {
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <EducationCard
-                        image={logoReact}
+                        image={imgReact}
                         title={t('Full Stack Degree')}
                         description='Hong Kong University of Science and Technology'
                         contentHeight={110}
@@ -70,7 +65,7 @@ const About = () => {
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <EducationCard
-                        image={logoGit}
+                        image={imgGit}
                         title={t('Git Degree')}
                         description='Platzi'
                         contentHeight={110}
@@ -78,7 +73,7 @@ const About = () => {
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <EducationCard
-                        image={logoTIC}
+                        image={imgTIC}
                         title={t('TIC Degree')}
                         description='Misión TIC 2022 y Universidad de Antioquia'
                         contentHeight={110}

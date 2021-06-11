@@ -1,74 +1,34 @@
 import React from "react";
+import { styles } from "../commons/Styles";
 import { Avatar, Grid, Typography } from '@material-ui/core';
-import img from '../../resources/img/avatar.png';
-import '@fontsource/roboto';
-
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(() => ({    
-    title: {
-        textAlign:'center',
-        fontWeight:'bold'
-    },
-    subTitle: {
-        textAlign:'center',
-        fontStyle:'italic', 
-        fontSize:14
-    },
-    avatar: {
-        height: 160, 
-        width: 160, 
-        marginTop: 20, 
-        marginBottom: 15,        
-    }
-}));
+import { AvatarImg } from "../../resources/img/Images";
 
 
 const Portrait = () => {
-    const classes = useStyles();
 
     return (
         <Grid container justify = "center">
-            
             <Avatar
                 alt='Santiago'
-                src={img}
-                className={classes.avatar}
+                src={AvatarImg}
+                style={styles.avatarContainer}
+                // className={classes.avatarContainer} this does not work
             />
-        
-            <Typography variant='body2' className={classes.title}>
+            <Typography 
+                variant='body1' 
+                component='span' 
+                style={styles.avatarTitle}
+            >
                 Santiago Marulanda Meza
             </Typography>
-            <Typography className={classes.subTitle}>
-                santi@gmail.com
+            <Typography 
+                variant='body2' 
+                component='span' 
+                style={styles.avatarSubtitle}
+            >
+                santiago.marulandam@gmail.com
             </Typography>
         </Grid >
     );
 };
 export default Portrait;
-
-/*
-<Grid container justify='flex-start' direction='column' alignItems='center'>
-    <Grid item >
-        <Avatar
-            alt='Santiago'
-            src={img}
-            style={{ height: 160, width: 160, marginTop: 20, marginBottom: 15 }}
-        />
-    </Grid>
-    <Grid item >
-        <Typography variant='subtitle1'>
-            Santiago Marulanda
-        </Typography>
-
-    </Grid>
-    <Grid item >
-        <Typography variant='subtitle2'>
-            santi@gmail.com
-        </Typography>
-
-    </Grid>
-
-
-</Grid>
-*/
