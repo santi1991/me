@@ -1,5 +1,5 @@
 import React from "react";
-import { useStyles } from '../../utilities/commons/Styles';
+import { styles } from '../../utilities/commons/Styles';
 import { useTranslation } from 'react-i18next';
 import { Paper, Grid, Typography } from '@material-ui/core';
 import EducationCard from '../../utilities/components/EducationCard'; 
@@ -8,14 +8,13 @@ import { imgUtp, imgCalasanz, imgGit, imgReact, imgEnglish, imgTIC } from '../..
 
 const About = () => {
     const { t } = useTranslation();
-    const classes = useStyles();
     return (
-        <div className={classes.screenContainer}>
+        <div style={styles.screenContainer}>
 
             <Grid container spacing={3} alignItems="center" justify='center' >
 
                 <Grid item xs={12} sm={6} >
-                    <Paper className={classes.paper}>
+                    <Paper style={styles.paper}>
                         <Typography gutterBottom variant="h5" component="h2" align='center'>
                            {t('Hello World')}!
                         </Typography>

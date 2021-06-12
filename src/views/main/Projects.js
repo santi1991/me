@@ -1,12 +1,10 @@
 import React from "react";
-import { useStyles } from '../../utilities/commons/Styles';
+import { styles } from '../../utilities/commons/Styles';
 
 const Projects = () => {
-    const classes = useStyles();
     return (
-        <div>
-            <div className={classes.toolbar} />
-            <h1>This is the Projects page</h1>
+        <div style={styles.screenContainer}>            
+            <h1>Coming Soon!</h1>
         </div>
     );
 };

@@ -42,29 +42,21 @@ const useStyles = makeStyles((theme) => ({
         marginRight:15,
         flexGrow: 1,        
     },
-    paper: {
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-    paperSkills: {
-        flexDirection:'row',
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-    //------  skills  ------------
-    skillTitle: {
-        marginTop:42, 
-        marginRight:5, 
-        marginLeft:5,
-        width:70,
-        fontWeight:'bold',
-        letterSpacing:1,        
-    },    
+    // paper: {
+    //     padding: theme.spacing(1),
+    //     textAlign: 'center',
+    //     color: theme.palette.text.secondary,
+    // },          
 }));
 
 const styles = {
+    screenContainer: {
+        marginTop: 65,
+        marginLeft: 15,
+        marginRight:15,
+        flexGrow: 1,        
+    },    
+    
     // ----- Avatar Portrait --------
     avatarContainer: {
         height: 150, 
@@ -99,6 +91,20 @@ const styles = {
         //fontStyle:'italic',
         fontSize:45,
     },
+    //------  skills  ------------
+    skillTitle: {
+        marginTop:42, 
+        marginRight:5, 
+        marginLeft:5,
+        width:70,
+        fontWeight:'bold',
+        letterSpacing:1,        
+    },   
+    paper: {
+        padding: 2,
+        textAlign: 'center',
+        //color: theme.palette.text.secondary,
+    },    
 };
 
 export { useStyles, useTheme, ThemeProvider, createMuiTheme, styles };

@@ -1,5 +1,5 @@
 import React from "react";
-import { MeImg } from '../../resources/img/Images';
+import { MeImg} from '../../resources/img/Images';
 import HomeCarousel from '../../utilities/components/HomeCarousel';
 
 const styles = {

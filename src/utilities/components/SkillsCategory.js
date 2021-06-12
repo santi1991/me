@@ -1,14 +1,13 @@
 import React from 'react';
-import { useStyles } from '../commons/Styles';
+import { styles } from '../commons/Styles';
 import { Box, Typography } from '@material-ui/core';
 import SkillsCard from './SkillsCard'
 
 
 const SkillsCategory = ({ name, list }) => {
-    const classes = useStyles();
     return (
         <>
-            <Typography variant='subtitle2' component='h2' align='center' className={classes.skillTitle}>
+            <Typography variant='subtitle2' component='h2' align='center' style={styles.skillTitle}> 
                 {name}
             </Typography>
             <Box display="flex" flexDirection="row" p={1} m={0.8} bgcolor="background.paper">
