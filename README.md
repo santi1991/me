@@ -1,70 +1,45 @@
-# Welcome to This Website About Me
+# Welcome to my Website
+
+[Hello World! - Check out my website](https://santi1991.github.io/me/).\
+So you can get to know me a little better, I created this website about me... enjoy!
+
+## About the Site
 
 This project was created with [ReactJS](https://reactjs.org/).
 
-## Available Scripts
+I consider myself a self learner who fell in love with `React`, `React Native` and `JavaScript`.\
+On this path to create applications, I am very passionate about creating **React Native apps**.\
+I build my projects using most of the React Hooks to manage the state of the app and to optimize it.\
+I also find very useful tools such as `Google Firebase` and `Google Cloud Platform` together with `PostgreSQL`.\
+to build and deploy real world applications.  
 
-In the project directory, you can run:
+## Additional Libraries
 
-### `npm start`
+The following libraries were used to bring this site alive:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Material-UI`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Provides React components to easily develop the UI of Web Applications.\
+Open [Material-UI](https://material-ui.com/) to check out this awesome library.
 
-### `npm test`
+The Website uses these components to not only look beautiful, but also responsive.\
+You will also see some cool navigation components in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `React Router`
 
-### `npm run build`
+It helps you bring functionality to the UI navigation components.\
+The library provies Navigational Components, ckeck it out [React Router](https://reactrouter.com/) for more information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `...and many others!`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There are plenty of libraries and tools that helps me build the app for production.\
+For example, one of them is the one I used to translante the site and making it multilanguage.\
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Take a look [react-i18next](https://react.i18next.com/) for more information.
 
-### `npm run eject`
+### `much more coming soon!!`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: Don’t forget to visit my `site`!**
+[Hello World! - Check out my website](https://santi1991.github.io/me/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
