@@ -39,7 +39,7 @@ Take a look [react-i18next](https://react.i18next.com/) for more information.
 
 ### `much more coming soon!!`
 
-**Note: Don’t forget to visit my `site`!**
-[Hello World! - Check out my website](https://santi1991.github.io/me/)
+**Note: Don’t forget to visit my `site!`**.\
+[Check out my website](https://santi1991.github.io/me/)
 
 
