@@ -71,7 +71,7 @@ const styles = {
     avatarSubtitle: {
         textAlign:'center',
         fontStyle:'italic', 
-        fontSize:14,
+        fontSize:12,
         marginBottom: 15
     },
     // ------ SLIDES Carousel -------------------
