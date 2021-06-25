@@ -6,7 +6,7 @@ const AppContext = createContext();
 //in this way you can consume the state from the components: 
 //const { halState, setHalState } = useContext(AppContext);
 
-const ContextProvider = (props) => {
+const ContextProvider = (props) => { 
 
 	const { i18n } = useTranslation();
 
@@ -29,8 +29,8 @@ const ContextProvider = (props) => {
 		}
 	};
 	const initialState = {
-		themeMode: 'light',
-		language: 'es',
+		themeMode: localStorage.getItem('themeMode') || 'light',
+		language: localStorage.getItem('language') || 'es',
 		appContextData3: {}
 	};
 	const [appState, setAppState] = useReducer(reducer, initialState);

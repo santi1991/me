@@ -34,7 +34,7 @@ const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
             </List>
             <Divider />
             <SettleTheme/>
-            <SettleLanguage/>
+            <SettleLanguage/> 
         </>
     );
 };

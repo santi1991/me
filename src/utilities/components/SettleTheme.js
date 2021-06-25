@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Switch from '@material-ui/core/Switch';
 import { AppContext } from '../context/ContextProvider';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -10,12 +10,11 @@ import Brightness2Icon from '@material-ui/icons/Brightness2';
 import Brightness2OutlinedIcon from '@material-ui/icons/Brightness2Outlined';
 
 const SettleTheme = () => {
-
+ 
     const { appState, setAppState } = useContext(AppContext);
     const themeState = appState.themeMode === 'dark' ? true : false;
-
     const topValue = 8;
-
+    
     const toggleTheme = (event) => {
         // console.log(event.target.name); // 'dark' -> its the -name- props passed to the Switch component
         // console.log(event.target.checked); // true or false
@@ -26,6 +25,10 @@ const SettleTheme = () => {
             setAppState({ type: 'themeMode', payload: 'light' });
         }
     };
+
+    useEffect(() => {        
+        localStorage.setItem('themeMode', appState.themeMode);
+    }, [appState.themeMode]);
 
     return (
         <Grid container spacing={2} direction='row' justify='center' alignItems='center'>

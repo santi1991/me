@@ -13,7 +13,7 @@ const resources = {
 i18n	
 	.use(initReactI18next) // bind react-i18next to the instance
 	.init({
-		lng: 'es', // set the initial language
+		lng: localStorage.getItem('language') || 'es', // set the initial language
 		fallbackLng: 'es',
 		resources: resources,
 		interpolation: {

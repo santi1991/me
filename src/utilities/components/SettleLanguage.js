@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Switch from '@material-ui/core/Switch';
 import { AppContext } from '../context/ContextProvider';
 import Grid from '@material-ui/core/Grid';
@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const SettleLanguage = () => {
-
+ 
     const { appState, setAppState } = useContext(AppContext);
     const espLanguage = appState.language === 'es' ? true : false;
 
@@ -23,6 +23,10 @@ const SettleLanguage = () => {
             setAppState({ type: 'language', payload: 'es' });
         }
     };
+
+    useEffect(() => {        
+        localStorage.setItem('language', appState.language);
+    }, [appState.language]);
 
     return (
         <Grid container spacing={2} direction='row' justify='center' alignItems='center'>
