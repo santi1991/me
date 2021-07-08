@@ -43,7 +43,16 @@ const Projects = () => {
                     description={`Proyecto básico de sitio web hecho con Python y Flask`}
                     linkTo={'https://santi1991.pythonanywhere.com/'}
                     linkLabel={'Ver: https://santi1991.pythonanywhere.com/'}
-                />                                                           
+                />
+                <ProjectsCard
+                    title={'Sitio Web'}
+                    subtitle={'The Road to React Book'}
+                    avatarLetter={'R'}
+                    avatarColor={'green'}
+                    description={`Proyecto realizado siguiendo la lectura del libro The Road to React`}
+                    linkTo={'https://santi1991.github.io/road-react/'}
+                    linkLabel={'Ver: https://santi1991.github.io/road-react/'}
+                />                                                             
             </Grid>
             <h2>I will be indexing more projects Soon!</h2>
             
