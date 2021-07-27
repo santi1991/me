@@ -22,7 +22,8 @@
         "Core": "Core",
         "Database": "Database",
         "Server": "Server",
-        "Tools": "Tools"
+        "Tools": "Tools",
+        "Popular": "Popular"
 
     }
 }

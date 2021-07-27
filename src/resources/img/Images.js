@@ -18,6 +18,9 @@ import logoVisualStudio from './visualstudio.png';
 import logoGithub from './github.png';
 import logoSlack from './slack.png';
 import logoClickup from './clickup.png';
+import logoReactRouter from './reactrouter.png';
+import logoReactNativePaper from './reactnativepaper.png';
+import logoMaterialUi from './materialui.png';
 // ----------------------------------------------------------------
 // ------------  ABOUT Images  ------------------------------------
 import imgUtp from './logoUTP.png';
@@ -38,4 +41,4 @@ import AvatarImg from './avatar.png';
 export { logoJS, logoHTML, logoCSS, logoBootstrap, logoReact, logoReactNative, logoNodeJS, logoPython,
 	logoPostgreSQL, logoExpo, logoReactNavigation, logoGCP, logoFirebase, logoRNFirebase, logoKnex,
 	logoVisualStudio, logoGithub, logoSlack, logoClickup, imgUtp, imgCalasanz, imgGit, imgReact, imgEnglish, 
-	imgTIC, MeImg, AvatarImg }
+	imgTIC, MeImg, AvatarImg, logoReactRouter, logoReactNativePaper, logoMaterialUi }

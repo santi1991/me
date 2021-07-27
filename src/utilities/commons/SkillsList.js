@@ -5,25 +5,25 @@ export const core = [
         id: 0,
         image: L.logoHTML,
         title: 'HTML',
-        popUpTitle: ''
+        popUpTitle: 'HTML'
     },
     {
         id: 1,
         image: L.logoCSS,
         title: 'CSS',
-        popUpTitle: ''
+        popUpTitle: 'CSS'
     },
     {
         id: 2,
         image: L.logoBootstrap,
         title: 'Bootstrap',
-        popUpTitle: ''
+        popUpTitle: 'Bootstrap'
     },
     {
         id: 3,
         image: L.logoJS,
         title: 'JavaScript',
-        popUpTitle: ''
+        popUpTitle: 'JavaScript'
     },
 ];
 export const frontend = [
@@ -31,32 +31,14 @@ export const frontend = [
         id: 0,
         image: L.logoReact,
         title: 'React',
-        popUpTitle: ''
+        popUpTitle: 'React'
     },
     {
         id: 1,
         image: L.logoReactNative,
         title: 'React Native',
-        popUpTitle: ''
-    },
-    {
-        id: 2,
-        image: L.logoReactNavigation,
-        title: 'R. Navigation',
-        popUpTitle: 'React Navigation'
-    },
-    {
-        id: 3,
-        image: L.logoExpo,
-        title: 'Expo',
-        popUpTitle: ''
-    },
-    {
-        id: 4,
-        image: L.logoRNFirebase,
-        title: 'RN. Firebase',
-        popUpTitle: 'React Native Firebase'
-    },
+        popUpTitle: 'React Native'
+    },           
 ];
 export const tools = [
     {
@@ -69,19 +51,19 @@ export const tools = [
         id: 1,
         image: L.logoGithub,
         title: 'Github',
-        popUpTitle: ''
+        popUpTitle: 'Github'
     },
     {
         id: 2,
         image: L.logoSlack,
         title: 'Slack',
-        popUpTitle: ''
+        popUpTitle: 'Slack'
     },
     {
         id: 3,
         image: L.logoClickup,
         title: 'ClickUp',
-        popUpTitle: ''
+        popUpTitle: 'ClickUp'
     },
 ];
 export const backend = [
@@ -89,19 +71,13 @@ export const backend = [
         id: 0,
         image: L.logoNodeJS,
         title: 'NodeJS',
-        popUpTitle: ''
-    },
-    {
-        id: 1,
-        image: L.logoKnex,
-        title: 'KnexJS',
-        popUpTitle: ''
-    },
+        popUpTitle: 'NodeJS'
+    },    
     {
         id: 2,
         image: L.logoPython,
         title: 'Python',
-        popUpTitle: ''
+        popUpTitle: 'Python'
     },
     {
         id: 3,
@@ -115,7 +91,7 @@ export const database = [
         id: 0,
         image: L.logoPostgreSQL,
         title: 'PostgreSQL',
-        popUpTitle: ''
+        popUpTitle: 'PostgreSQL'
     }, 
 ];
 export const server = [
@@ -125,4 +101,49 @@ export const server = [
         title: 'Google Cloud',
         popUpTitle: 'Google Cloud Platform'
     }, 
+];
+
+export const popular = [
+    {
+        id: 0,
+        image: L.logoExpo,
+        title: 'Expo',
+        popUpTitle: 'Expo'
+    }, 
+    {
+        id: 1,
+        image: L.logoReactNavigation,
+        title: 'R. Navigation',
+        popUpTitle: 'React Navigation'
+    },
+    {
+        id: 2,
+        image: L.logoReactRouter,
+        title: 'React Router',
+        popUpTitle: 'React Router'
+    },
+    {
+        id: 3,
+        image: L.logoRNFirebase,
+        title: 'RN. Firebase',
+        popUpTitle: 'React Native Firebase'
+    },
+    {
+        id: 4,
+        image: L.logoKnex,
+        title: 'KnexJS',
+        popUpTitle: 'KnexJS'
+    },
+    {
+        id: 5,
+        image: L.logoReactNativePaper,
+        title: 'RN. Paper',
+        popUpTitle: 'React Native Paper'
+    },
+    {
+        id: 6,
+        image: L.logoMaterialUi,
+        title: 'Material UI',
+        popUpTitle: 'Material UI'
+    },
 ];

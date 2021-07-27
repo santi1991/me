@@ -56,6 +56,14 @@ const Skills = () => {
                         list={List.server}
                     />                      
                 </Grid>
+                
+                <Grid container item xs={12} spacing={3}>
+                    <SkillsCategory 
+                        name={t('Popular')}
+                        list={List.popular}
+                        fontSize={11}
+                    />                      
+                </Grid>
 
             </Grid>
         </div>

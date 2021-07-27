@@ -4,21 +4,25 @@ import { Box, Typography } from '@material-ui/core';
 import SkillsCard from './SkillsCard'
 
 
-const SkillsCategory = ({ name, list }) => {
+const SkillsCategory = ({ name, list, fontSize }) => {
     return (
         <>
-            <Typography variant='subtitle2' component='h2' align='center' style={styles.skillTitle}> 
+            <Typography variant='subtitle2' component='h2' align='center' style={styles.skillTitle}>
                 {name}
             </Typography>
-            <Box display="flex" flexDirection="row" p={1} m={0.8} bgcolor="background.paper">
+            <Box display='flex' flexDirection='row' p={1} m={1} bgcolor='background.paper'>
                 {
                     list.map((item) => (
-                        <SkillsCard
-                            key={item.id}
-                            image={item.image}
-                            title={item.title}
-                            popUpTitle={item.popUpTitle}
-                        />
+                        <div style={{ marginLeft: 3, marginRight: 3 }} key={item.id}>
+                            <SkillsCard
+                                key={item.id}
+                                image={item.image}
+                                title={item.title}
+                                popUpTitle={item.popUpTitle}
+                                fontSize={fontSize}
+                            />
+                        </div>
+
                     ))
                 }
             </Box>

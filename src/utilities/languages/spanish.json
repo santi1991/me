@@ -22,6 +22,7 @@
         "Core": "Base",
         "Database": "Base de Datos",
         "Server": "Servidor",
-        "Tools": "Utilidades"
+        "Tools": "Utilidades",
+        "Popular": "Popular"
     }
 }

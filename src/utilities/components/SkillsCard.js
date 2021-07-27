@@ -26,7 +26,10 @@ const SkillsCard = ({ image, title, fontSize = 12, popUpTitle = '' }) => {
     return (
         <Grid container spacing={1} direction='column' justify='center'>
             <Card style={styles.root}>
-                <CardActionArea onClick={() => alert('hola')} style={{ height: number, width: number }} >
+                <CardActionArea 
+                    onClick={() => alert(`${popUpTitle}`)} 
+                    style={{ height: number, width: number }} 
+                >
                     <CardMedia
                         alt={title}
                         component='img'
@@ -37,7 +40,7 @@ const SkillsCard = ({ image, title, fontSize = 12, popUpTitle = '' }) => {
                     />
                 </CardActionArea>
             </Card>
-            <Typography variant="subtitle2" component="h2" align='center' style={{ fontSize: fontSize }}>
+            <Typography variant='subtitle2' component='h2' align='center' style={{ fontSize: fontSize }}>
                 {title}
             </Typography>
         </Grid>
