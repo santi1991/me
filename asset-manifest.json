@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/me/static/css/main.827b0664.chunk.css",
-    "main.js": "/me/static/js/main.394e3a71.chunk.js",
-    "main.js.map": "/me/static/js/main.394e3a71.chunk.js.map",
+    "main.js": "/me/static/js/main.1b145694.chunk.js",
+    "main.js.map": "/me/static/js/main.1b145694.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.141b295c.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.141b295c.js.map",
     "static/css/2.95d6cfe9.chunk.css": "/me/static/css/2.95d6cfe9.chunk.css",
@@ -22,6 +22,7 @@
     "static/media/logoTIC.57bc9407.png": "/me/static/media/logoTIC.57bc9407.png",
     "static/media/logoUTP.a1b0cc68.png": "/me/static/media/logoUTP.a1b0cc68.png",
     "static/media/me.da94224c.png": "/me/static/media/me.da94224c.png",
+    "static/media/reactnativepaper.fc10d1e7.png": "/me/static/media/reactnativepaper.fc10d1e7.png",
     "static/media/index.css": "/me/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
   },
   "entrypoints": [
@@ -29,6 +30,6 @@
     "static/css/2.95d6cfe9.chunk.css",
     "static/js/2.b91b4f50.chunk.js",
     "static/css/main.827b0664.chunk.css",
-    "static/js/main.394e3a71.chunk.js"
+    "static/js/main.1b145694.chunk.js"
   ]
 }
