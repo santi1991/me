@@ -9,13 +9,13 @@ import Typography from '@material-ui/core/Typography';
 const EducationCard = ({ image, title, subtitle = '', description, contentHeight = 80 }) => {
 
     return (
-        <Card className={{ maxWidth: 345 }}>
+        <Card style={{ maxWidth: 345 }}>
             <CardActionArea onClick={() => alert('hola')} >
                 <CardMedia
                     alt={title}
                     component='img'
                     height='140'
-                    className={{ height: 140 }}
+                    style={{ height: 140 }}
                     image={image}
                     title={title}
                 />

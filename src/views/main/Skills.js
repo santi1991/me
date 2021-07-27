@@ -4,11 +4,15 @@ import { styles } from '../../utilities/commons/Styles';
 import Grid from '@material-ui/core/Grid';
 import * as List from '../../utilities/commons/SkillsList';
 import SkillsCategory from  '../../utilities/components/SkillsCategory';
+import ScreenHeader from "../../utilities/components/ScreenHeader";
                                                         
 const Skills = () => {
     const { t } = useTranslation();
     return (
         <div style={styles.screenContainer}>
+        
+            <ScreenHeader title={t('Skills')}/>
+
             <Grid container spacing={2} direction='row'>
 
                 <Grid container item xs={12} sm={6} spacing={3}>

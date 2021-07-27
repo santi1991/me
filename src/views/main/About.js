@@ -4,12 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { Paper, Grid, Typography } from '@material-ui/core';
 import EducationCard from '../../utilities/components/EducationCard'; 
 import { imgUtp, imgCalasanz, imgGit, imgReact, imgEnglish, imgTIC } from '../../resources/img/Images'
-
+import ScreenHeader from "../../utilities/components/ScreenHeader";
 
 const About = () => {
     const { t } = useTranslation();
     return (
         <div style={styles.screenContainer}>
+
+            <ScreenHeader title={t('About Me')}/>
 
             <Grid container spacing={3} alignItems="center" justify='center' >
 

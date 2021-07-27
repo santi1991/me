@@ -4,7 +4,8 @@ import ProjectsCard from '../ProjectsCard';
 
 const JuniorProjects = () => {
     return (
-        <React.Fragment>
+        <>
+            <Grid item xs={12}> <h2>Junior Projects!</h2></Grid>
             <Grid item xs={12} sm={6}>
                 <ProjectsCard
                     title={'Multi-Plataforma'}
@@ -30,7 +31,7 @@ const JuniorProjects = () => {
                     linkLabel={'Ver: https://santi1991.github.io/road-react/'}
                 />
             </Grid>
-        </React.Fragment>
+        </>
     );
 }
 export default JuniorProjects;

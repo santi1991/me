@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { screensList } from "../utilities/commons/ScreensList";
 
-const StackScreens = () => { 
+const AppScreens = () => { 
     return (
         <>
             {/*
@@ -24,4 +24,4 @@ const StackScreens = () => {
         </>
     )
 };
-export default StackScreens;
+export default AppScreens;

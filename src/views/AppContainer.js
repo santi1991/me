@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import StackScreens from './StackScreens';
+import AppScreens from './AppScreens';
 import NavigationContainer from './NavigationContainer';
 import { useStyles, ThemeProvider, createMuiTheme } from '../utilities/commons/Styles';
 import { AppContext } from '../utilities/context/ContextProvider';
@@ -23,7 +23,7 @@ const AppContainer = () => {
                     <CssBaseline />
                     <NavigationContainer />
                     <main className={classes.content}>                        
-                        <StackScreens />
+                        <AppScreens />
                     </main>
                 </div>
             </Router>

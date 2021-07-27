@@ -5,6 +5,7 @@ import ProjectsCard from '../ProjectsCard';
 const OtherProjects = () => {
     return (
         <React.Fragment>
+            <Grid item xs={12}> <h2>Other Projects...</h2></Grid>
             <Grid item xs={12} sm={6}>
                 <ProjectsCard
                     title={'Ingeniero Mecánico'}

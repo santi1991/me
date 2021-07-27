@@ -21,10 +21,10 @@ const styles = {
 };
 
 
-const SkillsCard = ({ key, image, title, fontSize = 12, popUpTitle = '' }) => {
+const SkillsCard = ({ image, title, fontSize = 12, popUpTitle = '' }) => {
 
     return (
-        <Grid container spacing={0.3} direction='column' justify='center'>
+        <Grid container spacing={1} direction='column' justify='center'>
             <Card style={styles.root}>
                 <CardActionArea onClick={() => alert('hola')} style={{ height: number, width: number }} >
                     <CardMedia

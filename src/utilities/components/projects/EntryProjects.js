@@ -4,7 +4,9 @@ import ProjectsCard from '../ProjectsCard';
 
 const EntryProjects = () => {
     return (
-        <React.Fragment>
+        <>
+            <Grid item xs={12}> <h2>Entry-level Projects</h2></Grid>
+           
             <Grid item xs={12} sm={6}>
                 <ProjectsCard
                     title={'Sitio Web'}
@@ -29,7 +31,7 @@ const EntryProjects = () => {
                     linkLabel={'Ver: https://santi1991.pythonanywhere.com/'}
                 />
             </Grid>
-        </React.Fragment>
+        </>
     );
 }
 export default EntryProjects;
