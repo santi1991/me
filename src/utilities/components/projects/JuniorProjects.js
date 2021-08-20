@@ -21,6 +21,19 @@ const JuniorProjects = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
                 <ProjectsCard
+                    title={'Mobile App'}
+                    subtitle={'Movies'}
+                    avatarLetter={'M'}
+                    avatarColor={'black'}
+                    description={`Aplicación móvil, podrás buscar una gran cantidad de peliculas.`}
+                    madeWith='React Native, Redux'
+                    linkTo={'https://drive.google.com/file/d/1oC1Gin2fVfhrbws4Ywv-VSPV4o31WpKJ/view?usp=sharing'}
+                    linkLabel={'Decarga la app (Android)'}
+                />
+
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <ProjectsCard
                     title={'Sitio Web'}
                     subtitle={'The Road to React Book'}
                     avatarLetter={'R'}

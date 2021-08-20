@@ -10,7 +10,7 @@ const OtherProjects = () => {
                 <ProjectsCard
                     title={'Ingeniero Mecánico'}
                     subtitle={'Trabajo de Grado'}
-                    avatarLetter={'M'}
+                    avatarLetter={'I'}
                     avatarColor={'purple'}
                     description={`Evaluación energética de un deshidratador solar tipo túnel para frutas\n(nada que ver con programación)`}
                     madeWith='Transferencia de Calor'

@@ -6,7 +6,7 @@ import { ListItem, ListItemIcon, ListItemText, Divider, List } from '@material-u
 import SettleTheme from '../../utilities/components/SettleTheme';
 import SettleLanguage from '../../utilities/components/SettleLanguage';
 import Portrait from '../../utilities/components/Portrait';
-
+import CurriculumVitae from '../../utilities/components/CurriculumVitae';
 
 const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
     const { t } = useTranslation();
@@ -33,6 +33,7 @@ const DrawerContent = ({ isDrawerOpen, toggleDrawer }) => {
                 }
             </List>
             <Divider />
+            <CurriculumVitae/>
             <SettleTheme/>
             <SettleLanguage/> 
         </>
