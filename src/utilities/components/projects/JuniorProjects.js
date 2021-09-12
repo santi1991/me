@@ -6,6 +6,21 @@ const JuniorProjects = () => {
     return (
         <>
             <Grid item xs={12}> <h2>Junior Projects!</h2></Grid>
+
+            <Grid item xs={12} sm={6}>
+                <ProjectsCard
+                    title={'Sitio Web'}
+                    subtitle={'Users Management'}
+                    avatarLetter={'U'}
+                    avatarColor={'cyan'}
+                    description={`Podrás gestionar usuarios, crear, actualizar y eliminar.`}
+                    madeWith='React'
+                    linkTo={'https://santi1991.github.io/users'}
+                    linkLabel={'Ver: https://santi1991.github.io/users'}
+                />
+
+            </Grid>
+
             <Grid item xs={12} sm={6}>
                 <ProjectsCard
                     title={'Multi-Plataforma'}
